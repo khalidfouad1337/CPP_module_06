@@ -1,33 +1,28 @@
-NAME 	 = ScalarConverte
+NAME = convert
 
-SRCS 	 = ScalarConverte.cpp
+SRCS = main.cpp ScalarConverter.cpp
 
-INCLUDES = ScalarConverte.hpp
+Include = ScalarConverter.hpp
 
+OBJS = $(SRCS:.cpp=.o)
+CC = c++
+RM = rm -rf
+CFLAGS = -Wall -Wextra -Werror -std=c++98
 
-OBJS     = $(SRCS: .cpp = .o)
-CC       = c++
-RM       = rm -rf
-CPPFLAGS = -Wall -Wextra -Werror -std=c++98
+%.o : %.cpp ${Include}
+		$(CC) $(CFLAGS) -g -c $< -o $@
 
+all:		$(NAME) 
 
-%.o : %cpp ${INCLUDES}
-		$(CC) $(CPPFLAGS) -g -c $< -o $@
+$(NAME): $(OBJS)
+			$(CC) $(OBJS) -o $(NAME)
 
+clean:
+				$(RM) $(OBJS) 
+			
+fclean:			clean
+				$(RM) $(NAME)
 
-all : $(NAME)
+re:				fclean $(NAME)
 
-$(NAME) : $(OBJS)
-				$(CC) $(OBJS) -o $(NAME)
-
-
-clean : 		$(RM) $(OBJS)
-
-
-flcean :		clean
-						$(RM) $(NAME)
-
-
-re :					fclean $(NAME)
-
-.PHONY : all fclean clean re
+.PHONY: all fclean clean re

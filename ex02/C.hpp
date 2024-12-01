@@ -1,14 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ScalarConverte.cpp                                 :+:      :+:    :+:   */
+/*   C.hpp                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kfouad <kfouad@student.1337.ma>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/20 00:24:36 by kfouad            #+#    #+#             */
-/*   Updated: 2024/11/20 00:59:14 by kfouad           ###   ########.fr       */
+/*   Created: 2024/11/26 03:30:18 by kfouad            #+#    #+#             */
+/*   Updated: 2024/11/26 03:33:46 by kfouad           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ScalarConverte.hpp"
+#ifndef C_HPP
+#define C_HPP
+#include "Base.hpp"
 
+class C : public Base {};
+
+#endif

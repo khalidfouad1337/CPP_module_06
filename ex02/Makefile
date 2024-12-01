@@ -1,8 +1,8 @@
 NAME = convert
 
-SRCS = main.cpp Serializer.cpp
+SRCS = main.cpp Base.cpp
 
-Include = Serializer.hpp data.hpp
+Include = A.hpp B.hpp C.hpp Base.hpp
 
 OBJS = $(SRCS:.cpp=.o)
 CC = c++
