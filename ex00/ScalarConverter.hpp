@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScalarConverter.hpp                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kfouad <kfouad@student.1337.ma>            +#+  +:+       +#+        */
+/*   By: khalid <khalid@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/20 00:14:36 by kfouad            #+#    #+#             */
-/*   Updated: 2025/02/19 21:04:32 by kfouad           ###   ########.fr       */
+/*   Updated: 2025/02/21 17:59:40 by khalid           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ class ScalarConverter
         static void convertFromFloat(std::string  _string);
         static void convertFromDouble(std::string  _string);
 
-        static void DidplayValues(std::string _string);
+        static void DidplayValues(char* parm);
 };
 
 
